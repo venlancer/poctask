@@ -1,0 +1,22 @@
+<app-admin></app-admin>
+<h1 class="header-txt">User Details</h1>
+<table class="table table-hover custom-tbl">
+    <thead>
+      <tr>
+        <th scope="col">Serial No.</th>
+        <th scope="col">Name</th>
+        <th scope="col">User Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone Number</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let item of userDetails'>
+        <th>{{item.id}}</th>
+        <td>{{item.name}}</td>
+        <td>{{item.username}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.phone}}</td>
+      </tr>
+    </tbody>
+  </table>
